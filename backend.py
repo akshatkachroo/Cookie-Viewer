@@ -32,7 +32,8 @@ def cookies():
         return 'Error retrieving cookies'
 
 if __name__ == '__main__':
-    app.run(debug=True, host='139.180.138.95', port=8080)
+    app.run(host='0.0.0.0', debug=True)
+
 
 
 
