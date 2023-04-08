@@ -7,7 +7,7 @@ form.addEventListener('submit', async (event) => {
 	event.preventDefault();
 	
 	const website = websiteInput.value;
-	const response = await fetch(`http://127.0.0.1:5500/Cookie-main/index.html`);
+	const response = await fetch(`http://127.0.0.1:5500/cookies?website=${website}`);
 	
 	if (response.ok) {
 		const data = await response.json();
