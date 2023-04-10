@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie Viewer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Cookie Viewer</h1>
+		<form>
+			<label for="website">Enter Website:</label>
+			<input type="url" id="website" name="website" required>
+			<button type="submit" id="submit">View Cookies</button>
+		</form>
+		<div id="result"></div>
+		<table id="scanInfoTable">
+			<thead>
+			  <tr>
+				<h2>Scan Information</h2>
+				<th>Date</th>
+				<th>Time</th>
+				<th>Location</th>
+				<th>Pages</th>
+				<th>Encrypted</th>
+				<th>Notice</th>
+				<th>Privacy Policy</th>
+			  </tr>
+			</thead>
+			<tbody></tbody>
+		  </table>
+		<table id="cookieTable" class="collapsible-table">
+			<thead>
+				<tr>
+					<th>Cookie Name</th>
+					<th>Cookie Domain</th>
+					<th>Cookie Expires</th>
+					<th>Cookie Secure</th>
+					<th>Cookie HttpOnly</th>
+					<th>Cookie Category</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>  
+		</table>
+		  </div>
+		  <script src="script.js"></script>		  
+</body>
+</html>
+
+
+	
+	
+	
+
+
+
+
